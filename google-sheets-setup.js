@@ -76,7 +76,7 @@ function doPost(e) {
       data.etsyOrderNumber || "",
       data.storeStatus || "",
       data.existingStoreUrl || "",
-      data.themeSelection || "",
+      data.themeSelection || (data.otherTheme ? ("Other: " + data.otherTheme) : ""),
       data.brandDetails || "",
       data.businessNameIndustry || "",
       data.preferredCurrency || "",
